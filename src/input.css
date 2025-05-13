@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* font family */
+  --font-poppins: "Poppins", san-serif;
+
+  /* colors */
+  --color-accent: #000000;
+  --color-primary: #d1453b;
+  --color-secondary: #f6eee0;
+
+  /* font sizes */
+  --text-fs-paragraph: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
+  --text-fs-h1: clamp(2.25rem, 2.179rem + 0.357vw, 2.5rem);
+}
+
+@layer components {
+  .hero-headshots {
+    @apply rounded-full w-8 h-8;
+  }
+}
