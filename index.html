@@ -61,16 +61,32 @@
         <div class="md:hidden">
           <button
             aria-label="Toggle Mobile Nav"
-            class="cursor-pointer focus:border focus:border-primary focus:outline outline-primary focus:ring focus:ring-primary"
+            aria-expanded="true"
+            class="cursor-pointer focus:border focus:border-primary focus:outline outline-primary focus:ring focus:ring-primary peer"
           >
             <img src="./assets/icons/Hambuger.png" alt="" />
           </button>
 
-          <nav aria-label="Desktop Navigation" class="hidden">
-            <ul role="list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Our Community</a></li>
-              <li><a href="#">Tech Hangout</a></li>
+          <nav
+            aria-label="Desktop Navigation"
+            class="hidden peer-aria-expanded:block absolute w-full top-full left-0 h-[50vh] bg-accent text-secondary"
+          >
+            <ul role="list" class="flex flex-col gap-4 pl-8 font-medium">
+              <li>
+                <a href="#" class="relative group text-primary"
+                  >Home <span class="hoverLine"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group"
+                  >Our Community <span class="hoverLine"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="relative group"
+                  >Tech Hangout <span class="hoverLine"></span
+                ></a>
+              </li>
             </ul>
 
             <a href="#" class="hidden">Join the Community</a>
