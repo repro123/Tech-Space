@@ -57,11 +57,12 @@
           class="hidden md:block text-secondary font-medium bg-primary py-3 px-6 rounded-full focus:outline focus:outline-primary hover:opacity-90"
           >Join the Community</a
         >
-
+        <!-- in javascript/react, on click of the #mobileNavToggle button, toggle the aria-expanded attribute from false to true. If false, the mobile nav will remain hidden, if true, the mobile nav will show correctly -->
         <div class="md:hidden">
           <button
             aria-label="Toggle Mobile Nav"
-            aria-expanded="true"
+            aria-expanded="false"
+            id="mobileNavToggle"
             class="cursor-pointer focus:border focus:border-primary focus:outline outline-primary focus:ring focus:ring-primary peer"
           >
             <img src="./assets/icons/Hambuger.png" alt="" />
