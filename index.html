@@ -14,38 +14,38 @@
   </head>
 
   <body
-    class="antialiased flex flex-col min-h-dvh bg-accent font-poppins p-4 pt-0 text-fs-paragraph"
+    class="flex flex-col p-4 pt-0 antialiased min-h-dvh bg-accent font-poppins text-fs-paragraph"
   >
-    <header class="sticky top-0 p-4 bg-accent z-20">
+    <header class="sticky top-0 z-20 p-4 bg-accent">
       <div
-        class="container mx-auto flex justify-between items-center max-w-7xl"
+        class="container flex items-center justify-between mx-auto max-w-7xl"
       >
         <a
           href="#"
           aria-label="Tech Space Home"
           class="flex items-center gap-2 focus:outline outline-primary"
         >
-          <img src="./assets/icons/header-logo.png" alt="" class="h-10 w-10" />
+          <img src="./assets/icons/header-logo.png" alt="" class="w-10 h-10" />
           <span class="font-bold text-primary">Tech Space</span>
         </a>
 
         <nav aria-label="Destop Navigation" class="hidden md:block">
           <ul
             role="list"
-            class="flex items-center gap-4 lg:gap-8 xl:gap-10 text-secondary font-medium"
+            class="flex items-center gap-4 font-medium lg:gap-8 xl:gap-10 text-secondary"
           >
             <li>
-              <a href="#" class="text-primary relative group"
+              <a href="#" class="relative text-primary group"
                 >Home <span class="hoverLine"></span
               ></a>
             </li>
             <li>
-              <a href="#" class="group relative"
+              <a href="#" class="relative group"
                 >Our Community <span class="hoverLine"></span
               ></a>
             </li>
             <li>
-              <a href="#" class="group relative"
+              <a href="#" class="relative group"
                 >Tech Hangout <span class="hoverLine"></span
               ></a>
             </li>
@@ -54,7 +54,7 @@
 
         <a
           href="#"
-          class="hidden md:block text-secondary font-medium bg-primary py-3 px-6 rounded-full focus:outline focus:outline-primary hover:opacity-90"
+          class="hidden px-6 py-3 font-medium rounded-full md:block text-secondary bg-primary focus:outline focus:outline-primary hover:opacity-90"
           >Join the Community</a
         >
         <!-- in javascript/react, on click of the #mobileNavToggle button, toggle the aria-expanded attribute from false to true. If false, the mobile nav will remain hidden, if true, the mobile nav will show correctly -->
@@ -98,14 +98,14 @@
 
     <main class="grid">
       <section
-        class="hero bg-secondary text-accent p-4 rounded-2xl lg:min-h-screen"
+        class="p-4 hero bg-secondary text-accent rounded-2xl lg:min-h-screen"
       >
         <!-- bg-[url(../assets/images/hero-background.jpg)] bg-no-repeat bg-cover -->
         <div
-          class="container max-w-7xl mx-auto grid gap-8 lg:grid-cols-2 h-full items-stretch"
+          class="container grid items-stretch h-full gap-8 mx-auto max-w-7xl lg:grid-cols-2"
         >
           <div
-            class="flex flex-col gap-4 lg:gap-8 relative justify-center h-full"
+            class="relative flex flex-col justify-center h-full gap-4 lg:gap-8"
           >
             <img
               src="./assets/icons/jigsaw.png"
@@ -127,7 +127,7 @@
               transformative personal development.
             </p>
 
-            <div class="imagesheadsot flex items-center">
+            <div class="flex items-center imagesheadsot">
               <img
                 src="./assets/images/hero-image-1.jpg"
                 alt="member of community"
@@ -138,41 +138,41 @@
                 src="./assets/images/hero-image-2.jpg"
                 alt="member of community"
                 loading="lazy"
-                class="hero-headshots -ml-1"
+                class="-ml-1 hero-headshots"
               />
               <img
                 src="./assets/images/hero-image-6.jpg"
                 alt="member of community"
                 loading="lazy"
-                class="hero-headshots -ml-1"
+                class="-ml-1 hero-headshots"
               />
               <img
                 src="./assets/images/hero-image-4.jpg"
                 alt="member of community"
                 loading="lazy"
-                class="hero-headshots -ml-1"
+                class="-ml-1 hero-headshots"
               />
               <img
                 src="./assets/images/hero-image-3.jpg"
                 alt="member of community"
                 loading="lazy"
-                class="hero-headshots -ml-1"
+                class="-ml-1 hero-headshots"
               />
               <span
-                class="-ml-1 text-primary border-4 rounded-full grid place-items-center font-bold h-12 w-12"
+                class="grid w-12 h-12 -ml-1 font-bold border-4 rounded-full text-primary place-items-center"
                 >500+</span
               >
             </div>
 
             <a
               href="#"
-              class="hidden lg:block text-secondary bg-primary px-10 py-3 w-fit rounded-full xl:px-16 hover:opacity-90"
+              class="hidden px-10 py-3 rounded-full lg:block text-secondary bg-primary w-fit xl:px-16 hover:opacity-90"
               >Join the Communnity</a
             >
           </div>
 
-          <div class="heroimages grid place-items-center h-full">
-            <div class="grid grid-rows-3 grid-cols-2 relative">
+          <div class="grid h-full heroimages place-items-center">
+            <div class="relative grid grid-cols-2 grid-rows-3">
               <img
                 src="./assets/icons/wobbledrocket.png"
                 alt=""
@@ -182,90 +182,93 @@
                 src="./assets/images/hero-image-7.jpg"
                 alt="a male community member at an event"
                 loading="lazy"
-                class="row-start-1 row-end-3 col-start-1 col-span-1 relative z-10 w-3xs xl:w-80 h-80 xl:h-96 object-cover rounded-2xl shadow-accent shadow-md ml-2"
+                class="relative z-10 object-cover col-span-1 col-start-1 row-start-1 row-end-3 ml-2 shadow-md w-3xs xl:w-80 h-80 xl:h-96 rounded-2xl shadow-accent"
               />
               <img
                 src="./assets/images/hero-image-5.jpg"
                 alt="a male and a female community member talking while seated in an event"
                 loading="lazy"
-                class="row-start-2 row-end-4 col-start-2 col-span-2 w-3xs h-80 xl:w-80 xl:h-96 object-cover rounded-2xl shadow-accent shadow-md -ml-2"
+                class="object-cover col-span-2 col-start-2 row-start-2 row-end-4 -ml-2 shadow-md w-3xs h-80 xl:w-80 xl:h-96 rounded-2xl shadow-accent"
               />
             </div>
           </div>
 
           <a
             href="#"
-            class="bg-primary text-secondary rounded-full w-full p-4 text-center font-bold focus:outline focus:outline-primary hover:opacity-90 lg:hidden"
+            class="w-full p-4 font-bold text-center rounded-full bg-primary text-secondary focus:outline focus:outline-primary hover:opacity-90 lg:hidden"
             >Join the Community</a
           >
         </div>
       </section>
 
-      <section class="awesomeMembersSection bg-secondary text-accent p-4">
+      <section class="p-4 py-12 awesomeMembersSection bg-secondary text-accent">
         <div
-          class="container max-w-7xl mx-auto flex flex-col gap-4 items-center overflow-hidden"
+          class="container flex flex-col items-center gap-4 mx-auto max-w-7xl"
         >
-          <h2 class="text-fs-h2 text-primary font-bold">
+          <h2 class="font-bold text-center text-fs-h2 text-primary">
             Meet the Awesome Members
           </h2>
 
           <div
-            class="flex items-center gap-4 w-full overflow-x-scroll flex-nowrap"
+            class="flex gap-4 overflow-x-auto max-w-80 sm:max-w-xl md:max-w-full md:grid md:grid-cols-2 lg:grid-cols-3 flex-nowrap text-secondary"
           >
             <div
-              class="shrink-0 flex w-fit border flex-col gap-2 max-w-[18.75rem] p-4"
+              class="flex flex-col gap-2 p-4 shrink-0 basis-3xs bg-primary rounded-2xl"
             >
-              <p>Elisha TS</p>
-              <h3 class="text-fs-h3 font-bold">Project Manager</h3>
+              <p>Elisha</p>
+              <h3 class="font-bold leading-none text-fs-h3">Project Manager</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                placeat facere mollitia? Reprehenderit cupiditate deleniti
-                tempore ipsa ipsam esse culpa!
+                placeat facere mollitia
               </p>
               <img
                 src="./assets/images/elisha.jpg"
                 alt="Elisha"
                 loading="lazy"
-                class="max-w-[300px] object-cover rounded-2xl"
+                class="object-cover w-full mt-auto h-52 rounded-2xl lg:object-top"
               />
             </div>
             <div
-              class="card2 shrink-0 flex w-fit border flex-col gap-2 max-w-[18.75rem] p-4"
+              class="flex flex-col gap-2 p-4 shrink-0 basis-3xs bg-primary rounded-2xl"
             >
               <p>Abiodun</p>
-              <h3 class="text-fs-h3 font-bold">Content Creator</h3>
+              <h3 class="font-bold leading-none text-fs-h3">Content Creator</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                placeat facere mollitia? Reprehenderit cupiditate deleniti
-                tempore ipsa ipsam esse culpa!
+                placeat facere mollitia
               </p>
               <img
                 src="./assets/images/abiodun.jpg"
                 alt="Abiodun"
                 loading="lazy"
-                class="max-w-[300px] object-cover rounded-2xl"
+                class="object-cover w-full mt-auto h-52 rounded-2xl lg:object-top"
               />
             </div>
             <div
-              class="card3 shrink-0 flex w-fit border flex-col gap-2 max-w-[18.75rem] p-4"
+              class="flex flex-col gap-2 p-4 shrink-0 basis-3xs lg:w-full bg-primary rounded-2xl"
             >
-              <p>Rita TS</p>
-              <h3 class="text-fs-h3 font-bold">Social Media Manager</h3>
+              <p>Rita</p>
+              <h3 class="font-bold leading-none text-fs-h3">
+                Social Media Manager
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                placeat facere mollitia? Reprehenderit cupiditate deleniti
-                tempore ipsa ipsam esse culpa!
+                placeat facere mollitia
               </p>
               <img
                 src="./assets/images/rita.jpg"
                 alt="Rita"
                 loading="lazy"
-                class="max-w-[300px] object-cover rounded-2xl"
+                class="object-cover w-full mt-auto h-52 rounded-2xl lg:object-top"
               />
             </div>
           </div>
 
-          <a href="#">Know Others</a>
+          <a
+            href="#"
+            class="w-full px-10 py-3 font-semibold text-center rounded-full lg:w-fit text-secondary bg-primary hover:opacity-90"
+            >Know Others</a
+          >
         </div>
       </section>
 
@@ -276,8 +279,8 @@
       <section
         class="relative bg-[url(../assets/images/background.png)] bg-cover bg-center bg-primary text-center py-20 pb-24 px-4 text-secondary"
       >
-        <div class="max-w-3xl mx-auto w-full flex flex-col gap-6">
-          <h2 class="text-fs-h2 font-bold">Become Part of Something Great</h2>
+        <div class="flex flex-col w-full max-w-3xl gap-6 mx-auto">
+          <h2 class="font-bold text-fs-h2">Become Part of Something Great</h2>
           <p class="text-balance max-w-[50ch] self-center">
             Join Our Fast-Growing Tech Tribe, connect With Like-Minded
             Innovators, Earn Rewards, And Unlock Exclusice Perks- All While
@@ -285,18 +288,18 @@
           </p>
           <a
             href="#"
-            class="text-primary bg-secondary rounded-full py-3 px-20 w-fit self-center font-medium hover:opacity-90"
+            class="self-center px-20 py-3 font-medium rounded-full text-primary bg-secondary w-fit hover:opacity-90"
             >Join us today</a
           >
         </div>
         <div
-          class="absolute w-full h-8 rounded-tr-2xl rounded-tl-2xl left-0 bottom-0 bg-accent"
+          class="absolute bottom-0 left-0 w-full h-8 rounded-tr-2xl rounded-tl-2xl bg-accent"
         ></div>
       </section>
     </main>
 
-    <footer class="bg-accent text-secondary py-12 pt-16 px-4 text-base">
-      <div class="container max-w-7xl mx-auto flex flex-col gap-8">
+    <footer class="px-4 py-12 pt-16 text-base bg-accent text-secondary">
+      <div class="container flex flex-col gap-8 mx-auto max-w-7xl">
         <div
           class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"
         >
