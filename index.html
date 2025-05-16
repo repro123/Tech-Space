@@ -16,7 +16,7 @@
   <body
     class="antialiased flex flex-col min-h-dvh bg-accent font-poppins p-4 pt-0 text-fs-paragraph"
   >
-    <header class="sticky top-0 py-4 bg-accent z-20">
+    <header class="sticky top-0 p-4 bg-accent z-20">
       <div
         class="container mx-auto flex justify-between items-center max-w-7xl"
       >
@@ -96,7 +96,7 @@
       </div>
     </header>
 
-    <main class="grid gap-4">
+    <main class="grid">
       <section
         class="hero bg-secondary text-accent p-4 rounded-2xl lg:min-h-screen"
       >
@@ -200,8 +200,115 @@
           >
         </div>
       </section>
+
+      <section
+        class="relative bg-[url(../assets/images/background.png)] bg-cover bg-center bg-primary text-center py-20 pb-24 px-4 text-secondary"
+      >
+        <div class="max-w-3xl mx-auto w-full flex flex-col gap-6">
+          <h2 class="text-fs-h2 font-bold">Become Part of Something Great</h2>
+          <p class="text-balance max-w-[50ch] self-center">
+            Join Our Fast-Growing Tech Tribe, connect With Like-Minded
+            Innovators, Earn Rewards, And Unlock Exclusice Perks- All While
+            learning, Growing and Having fun.
+          </p>
+          <a
+            href="#"
+            class="text-primary bg-secondary rounded-full py-3 px-20 w-fit self-center font-medium hover:opacity-90"
+            >Join us today</a
+          >
+        </div>
+        <div
+          class="absolute w-full h-8 rounded-tr-2xl rounded-tl-2xl left-0 bottom-0 bg-accent"
+        ></div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-accent text-secondary py-12 pt-16 px-4 text-base">
+      <div class="container max-w-7xl mx-auto flex flex-col gap-8">
+        <div
+          class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <div class="flex flex-col gap-4 md:flex-row md:items-center">
+            <img src="assets/icons/Logo.png" alt="Logo" class="w-40" />
+
+            <p class="max-w-prose md:max-w-[30ch]">
+              Whether you are looking for answers, resources, or a community to
+              join, Tech Space has the right vibes for you.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <h4 class="text-fs-h4">Quick Links</h4>
+
+            <ul class="flex flex-col gap-4 md:flex-row md:items-center">
+              <li>
+                <a
+                  href="#"
+                  class="underline underline-offset-4 hover:text-primary"
+                  >Join Our community</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="underline underline-offset-4 hover:text-primary"
+                  >Tech Hangout</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="underline underline-offset-4 hover:text-primary"
+                  >Sponsors</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-primary"></div>
+
+        <div
+          class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"
+        >
+          <p class="flex items-center gap-2">
+            <img
+              src="assets/images/Screenshot 2025-04-03 223541 1.png"
+              alt=""
+              class="w-10 h-10"
+            />
+            <span>&copy; TechSpace 2025. All rights reserved.</span>
+          </p>
+
+          <ul class="flex items-center justify-around gap-6 lg:gap-10">
+            <li>
+              <a href="#" aria-label="Twitter"
+                ><img src="assets/icons/Twitter.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"
+                ><img src="assets/icons/Youtube.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"
+                ><img src="assets/icons/Instagram.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook"
+                ><img src="assets/icons/Facebook.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Pinterest"
+                ><img src="assets/icons/Pinterest.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

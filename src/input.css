@@ -12,6 +12,8 @@
   /* font sizes */
   --text-fs-paragraph: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
   --text-fs-h1: clamp(2.25rem, 1.75rem + 2.5vw, 4rem);
+  --text-fs-h2: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+  --text-fs-h4: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
 }
 
 @layer components {
