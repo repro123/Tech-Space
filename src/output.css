@@ -27,6 +27,7 @@
     --text-fs-paragraph: clamp(1rem, 0.964rem + 0.179vw, 1.125rem);
     --text-fs-h1: clamp(2.25rem, 1.75rem + 2.5vw, 4rem);
     --text-fs-h2: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+    --text-fs-h3: clamp(1.75rem, 1.536rem + 1.071vw, 2.5rem);
     --text-fs-h4: clamp(1.5rem, 1.429rem + 0.357vw, 1.75rem);
   }
 }
@@ -281,9 +282,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -332,6 +330,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -344,20 +345,26 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-\[18\.75rem\] {
+    max-width: 18.75rem;
+  }
   .max-w-\[50ch\] {
     max-width: 50ch;
+  }
+  .max-w-\[300px\] {
+    max-width: 300px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-prose {
     max-width: 65ch;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -367,6 +374,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-nowrap {
+    flex-wrap: nowrap;
   }
   .place-items-center {
     place-items: center;
@@ -400,6 +410,12 @@
   }
   .self-center {
     align-self: center;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .scroll-smooth {
     scroll-behavior: smooth;
@@ -503,6 +519,9 @@
   .text-fs-h2 {
     font-size: var(--text-fs-h2);
   }
+  .text-fs-h3 {
+    font-size: var(--text-fs-h3);
+  }
   .text-fs-h4 {
     font-size: var(--text-fs-h4);
   }
@@ -523,9 +542,6 @@
   }
   .text-balance {
     text-wrap: balance;
-  }
-  .text-wrap {
-    text-wrap: wrap;
   }
   .text-accent {
     color: var(--color-accent);
@@ -555,10 +571,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-accent) var(--tw-shadow-alpha), transparent);
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-primary {
     outline-color: var(--color-primary);
