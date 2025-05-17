@@ -19,7 +19,7 @@
 
 @layer components {
   .hero-headshots {
-    @apply rounded-full w-8 h-8 md:w-12 md:h-12 xl:w-16 xl:h-16;
+    @apply w-8 h-8 rounded-full md:w-12 md:h-12 xl:w-16 xl:h-16;
   }
   .hoverLine {
     @apply absolute w-full h-[2px] bg-primary left-0 top-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300;
